@@ -8,8 +8,9 @@ import Contact from './components/contact/Contact';
 import Navigation from './components/navigation/Navigation';
 // import HomePage from './pages/HomePage.jsx';
 import NotFoundPage from './components/notFoundPage/NotFoundPage';
-
-
+import TestFetch from './components/testFetch/TestFetch';
+import Jeopardy from './components/jeopardy/Jeopardy';
+import Display from './components/display/Display';
 
 
 
@@ -26,15 +27,17 @@ function App() {
         />
         <Route
           path="/welcome/:name"
-          render={(props) => <Welcome {...props}
-            name={props.match.params.name}
+          render={(props) => <Welcome {...props} name={props.match.params.name}
           />
           }
         />
         <Route exact path="/clock" component={Clock} />
         <Route exact path="/contact" component={Contact} />
+        <Route exact path="/testFetch" component={TestFetch} />
+        <Route exact path="/jeopardy" component={Jeopardy} />
         <Route path="*" component={NotFoundPage} />
-
+        
+          
       </Switch>
 
     </div>

@@ -60,7 +60,7 @@ class Contact extends React.Component {
                 </div>
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <label htmlFor="firstName">First Name</label>
+                        <label className="FirstName" htmlFor="firstName">First Name</label>
                         <input
                             type="text"
                             name="firstName"
@@ -70,7 +70,7 @@ class Contact extends React.Component {
                     </div>
 
                     <div>
-                        <label htmlFor="lastName">Last Name</label>
+                        <label className="LastName" htmlFor="lastName">Last Name</label>
                         <input
                             type="text"
                             name="lastName"
@@ -79,7 +79,7 @@ class Contact extends React.Component {
                         />
                     </div>
 
-                    <button>Submit Form</button>
+                    <button className="Button">Submit Form</button>
 
                 </form>
 

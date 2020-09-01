@@ -13,13 +13,13 @@ body {
   justify-content: center;
 
   /* background-image: linear-gradient(to top,#16181b -15%,#4dc8ee 75%); */
-  background-image: linear-gradient(to top,#16181b 5%,#4dc8ee 30%);
+  background-image: linear-gradient(to top,#16181b 5%,#4dc8ee 50%,#16181b 88%);
 }
 
 .App {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2); 
   border: 1px solid rgba(0, 0 ,0, 0.3);
-  padding: 1rem 2rem;
+  padding: 1rem 1rem; 
 }
 
 form > div {
@@ -39,21 +39,24 @@ input {
   font-size: 1rem;
   padding: 4px;
   
+  
 }
 
 button {
   background: #7067CFAA;
-  padding: 4px;
+ margin-left: 100px;
   border: 2px solid rgb(245, 241, 19);
   color: white;
   font-size: 1rem;
-  width: 100%;
+  width:25%;
+ 
+ 
 }
 
 .Welcome {
   width: 100%; color: rgb(245, 245, 250);
   font-family: Faster One;
-  text-shadow: -1px -1px 0 #000,-1px -1px 0 #000,-1px -1px 0 #000,-1px -1px 0 #000;
+  text-shadow: -1px -1px 0 #0417b9,-1px -1px 0  #0417b9,-1px -1px 0 #0417b9,-1px -1px 0 #0417b9;
   text-align: center;
   font-size:50px;
   
@@ -101,6 +104,8 @@ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   color: white;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
   font-size: 40px;
+  align-content: center;
+  padding-left:73px;
   
 }
 
@@ -119,11 +124,89 @@ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .Thanks {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size :30px;
-  color: rgb(223, 241, 53);
-  text-shadow: -1px -2px 0 black, -2px -1px 0 black, -1px -1px 0 black, -2px -2px 0 black;
+  font-family: Young Heart;
+  font-size :40px;
+  color: rgb(243, 241, 250);
+  text-shadow: -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black;
   text-align: center;
+  font-style: italic;
   
 }
+.TestFetch{
+font-family: Docktrin;
+font-size: 30px;
+color: rgb(242, 242, 248);
+text-shadow: -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black, -1px -1px 0 black;
+}
+.Info{
+  font-family: Oleo_Script;
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 0px 0 black, 1px 0px 0 black, 1px 0px 0 black,1px 0px 0 black;
+  font-variant: small-caps;
+}
+.Question{
+  color:rgb(175, 238, 175);
+  font-size: 33px;
+}
+.QuestionData{
+  font-family: Oleo_Script;
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 0px 0 black, 1px 0px 0 black, 1px 0px 0 black,1px 0px 0 black;
+  font-variant: small-caps;
+  
+}
+.PointValue{
+  color: rgb(175, 238, 175);
+  font-size: 33px;
+}
+.TitleData{
+  font-family: Oleo_Script;
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 0px 0 black, 1px 0px 0 black, 1px 0px 0 black,1px 0px 0 black;
+  font-variant: small-caps;
+}
+.Title{
+  color: rgb(175, 238, 175);
+  font-size: 33px;
+}
+.PointValueData{
+  font-family: Oleo_Script;
+  color: white;
+  font-size: 25px;
+  text-shadow: 1px 0px 0 black, 1px 0px 0 black, 1px 0px 0 black,1px 0px 0 black;
+  font-variant: small-caps;
+}
+.Score{
+  color: rgb(108, 247, 108);
+  font-size: 40px;
+  text-align: center;
+  background-color: rgb(122, 122, 118);
+line-height: 10mm;
+width: 30mm;
+outline: solid whitesmoke .2px;
+
+margin-left:400px;
+
+
+  
+}
+#root{
+  width: 600px;
+  border: whitesmoke dotted;
+ 
+}
+.FirstName {
+  padding-left:100px;
+}
+.LastName {
+  padding-left:100px
+}
+.Input{
+  margin-top: 100px;
+}
+
+
 
