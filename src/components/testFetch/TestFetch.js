@@ -23,6 +23,8 @@ class TestFetch extends React.Component {
                 Name: {this.state.currentCharacter.name}
                 <br/> 
                 Height: {this.state.currentCharacter.height}
+                <br/> 
+                
             </div>
         )
     }

@@ -2,6 +2,7 @@ import React from 'react';
 //import our service
 import JeopardyService from "../../jeopardyService";
 import Display from '../display/Display';
+import Clock from '../clock/Clock';
 
 
 
@@ -14,9 +15,12 @@ class Jeopardy extends React.Component {
             data: {},
             score: 0,
             formData: { userAnswer: "" },
-            category:[]
+            category: []
         }
+
     }
+
+
 
 
 
@@ -57,8 +61,8 @@ class Jeopardy extends React.Component {
     getNewCategory(id) {
         return this.client.getCategory(id).then(result => {
             console.log(result.data)
-            this.setState((prevState) =>{
-                return{
+            this.setState((prevState) => {
+                return {
                     category: [...prevState.category, result.data]
                 }
             })
@@ -76,26 +80,29 @@ class Jeopardy extends React.Component {
 
     componentDidMount() {
         this.getNewQuestion();
-        this.getNewCategory(Math.round(Math.random()*20));
-        this.getNewCategory(Math.round(Math.random()*20));
-        this.getNewCategory(Math.round(Math.random()*20));
+        this.getNewCategory(Math.round(Math.random() * 20));
+        this.getNewCategory(Math.round(Math.random() * 20));
+        this.getNewCategory(Math.round(Math.random() * 20));
     }
-
-
-
 
     render() {
-        return <Display
-            state={this.state}
-            handleChange={this.handleChange}
-            handleSubmit={this.handleSubmit}
-            // getNewCategory={this.}
-           />
-        
+        return (
+            <div>
+                <Display
+                    state={this.state}
+                    handleChange={this.handleChange}
+                    handleSubmit={this.handleSubmit}
 
-
+                />
+                <div className='JeopardyClock'>
+                    <div className='ClockText'>The Current Time is</div>
+                    
+                    <Clock
+                        size={150}
+                    />
+                </div>
+            </div>
+        )
     }
-
-    
 }
 export default Jeopardy;
